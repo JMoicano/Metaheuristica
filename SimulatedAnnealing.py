@@ -6,7 +6,7 @@ from threading import Thread
 
 class SimulatedAnnealing(Thread):
 	"docstring for SimulatedAnnealing"
-	def __init__(self, solution, resultQueue, iterations = 30, perturbations = 40, T0 = 90, alpha = 0.98):
+	def __init__(self, solution, resultQueue, iterations = 100, perturbations = 40, T0 = 90, alpha = 0.98):
 		Thread.__init__(self)
 		self.resultQueue = resultQueue
 		self.solution = solution
